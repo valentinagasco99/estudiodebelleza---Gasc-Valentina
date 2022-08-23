@@ -1,0 +1,107 @@
+    *{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        font-weight: 100;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url('../img/flores.jpg');
+            display: grid;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "aside main main"
+        "aside main main"
+        "aside main main"
+        "footer footer footer";
+        grid-template-rows: repeat(auto-fill, 1fr);
+        height: 100vh;
+    
+    }
+    
+    .grid-item {
+        padding: 20px;
+    }
+    
+    .grid-header {
+        grid-area: header;
+        text-align: center;
+    }
+    ul li {
+        display: inline-block;
+        color: #791944;
+    }
+    
+    .grid-footer {
+        grid-area: footer;
+        text-align: right;
+    }
+    .grid-main {
+        grid-area: main;
+        margin: 20px;
+        font-size: center; 
+        font-weight: center;
+        text-align: center;
+
+        
+    }
+    .grid-aside {
+        grid-area: aside;
+        background-color: transparent;
+        width: 400px;
+        height: 500px;
+        display: flex;
+    }
+
+
+h1 {color: #530e2d;  
+        text-align: center;
+        text-decoration: underline ;
+        }
+h2{color: #530e2d;  
+        margin: 20px;
+        text-decoration: underline ;
+        }
+p{color: #080808;  
+    display: block;
+    text-align: center;
+    }            
+
+.imagen1 {
+    display: flex;
+    width: 400px;
+    height: 450px;
+    margin: 20px;
+    padding: auto;
+}
+
+.h3 {display: block;
+     grid-area: header;}
+     
+
+@media  screen and (max-width: 768px) {
+   .imagen1 {
+   width: 65%;
+   height: 75%;
+   padding: 2%;
+}
+}
+
+.container {
+    margin: 20px;
+}
+
+.container-imagenes div {
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    flex: 20%;
+    padding: 10px;
+    flex-wrap: wrap;
+    float: left;
+}
+

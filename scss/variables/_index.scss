@@ -1,0 +1,41 @@
+header {
+    .grid-container{
+        height: 8vh;
+        width: 8vh;
+        transform: scalex(-1);
+    
+      .h1 {color: #530e2d;  
+        text-align: center;
+        text-decoration: underline}
+      .btn-group {
+        transform: scalex(1,05);
+        font-size: 1.2rem;
+        transition: all 2s ease-out}
+    }
+}
+
+main {
+    .h2 {color: #530e2d;  
+        margin: 20px;
+        text-decoration: underline;
+        -webkit-text-stroke: 1px black ;
+    }
+
+    .p {color: #080808;  
+        display: block;
+        text-align: center;}
+
+
+}
+
+aside {
+    .imagen1 {
+        max-width: -webkit-fill-available;}
+}
+
+footer {
+    .h3 {color: #530e2d;  
+        margin: 20px;
+        text-decoration: underline;
+        -webkit-text-stroke: 1px black ;}
+}
